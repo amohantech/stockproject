@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.back.model.Company" table="companies">
+        <id name="id" type="int">
+            <column name="ID" />
+        </id>
+        <property name="dataset_code" type="java.lang.String">
+            <column name="dataset_code" />
+        </property>
+        <property name="database_code" type="java.lang.String">
+            <column name="database_code" />
+        </property>
+        <property name="name" type="java.lang.String">
+        	<column name="name" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="refreshed_at" type="java.lang.String">
+            <column name="refreshed_at" />
+        </property>
+        <property name="newest_available_date" type="timestamp">
+        	<column name="newest_available_date" />
+        </property>
+         <property name="oldest_available_date" type="timestamp">
+        	<column name="oldest_available_date" />
+        </property>
+        <property name="frequency" type="java.lang.String">
+            <column name="frequency" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="premium" type="java.lang.String">
+        	<column name="premium" />
+        </property>
+        <property name="database_id" type="int">
+        	<column name="database_id" />
+        </property>
+    </class>
+</hibernate-mapping>
